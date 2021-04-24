@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #333333;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -76,6 +76,7 @@ nav a {
   z-index: 4;
   left: 50%;
   top: 100%;
+  width: 9em;
   padding: 15px;
   margin-top: 5px;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0), #791AA7);
@@ -93,7 +94,10 @@ nav a {
   opacity: 1;
   transform: translate(-50%, 0);
 }
-
+.topmenu li{
+    margin:3px;
+    font-size: 15pt;
+}
 submenu a {
   font-family: 'Libre Baskerville', serif;
   font-size: 18px;
@@ -107,9 +111,17 @@ submenu a {
   background: #d64ecf98;
 }
 
-h1 {
-  top: 10px;
-  font-size: 32px;
+.join {
   text-align: center;
-  color: darkgrey;
+  top: 10%;
+  left: 50%;
+  font-size: 15px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  padding: 15px 10px 15px;
+  margin-top: 5px;
+}
+
+h1, h3 {
+  font-family: 'Libre Baskerville', serif;
 }

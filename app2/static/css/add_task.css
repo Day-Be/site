@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #333333;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -65,7 +65,10 @@ nav a {
   opacity: 0;
   transition: .3s;
 }
-
+.topmenu li{
+    margin:3px;
+    font-size: 15pt;
+}
 .topmenu li:hover a:before {
   transform: translate(-50%, 0);
   opacity: 1;
@@ -76,6 +79,7 @@ nav a {
   z-index: 4;
   left: 50%;
   top: 100%;
+  width: 9em;
   padding: 15px;
   margin-top: 5px;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0), #791AA7);
@@ -107,9 +111,51 @@ submenu a {
   background: #d64ecf98;
 }
 
-h1 {
-  top: 10px;
-  font-size: 32px;
-  text-align: center;
-  color: darkgrey;
+.mapa {
+  position: fixed;
+  left: 10%;
+  top: 4px;
+}
+
+.for_tests {
+  left: 49%;
+  top: 70px;
+  text-align:left;
+  font-size: 18px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  padding: 15px 10px 15px;
+  margin-top: 5px;
+  background-color:#343434;
+  color: darkgray;
+}
+
+.submit {
+  position: relative;
+  color:darkgrey;
+  background-color:#1f1f1f;
+}
+
+.submit:hover {
+  color:#e2e70b;
+}
+
+input {
+  background-color: #656565;
+}
+
+input:hover {
+  color:#e2e70b;
+}
+
+textarea {
+  background-color: darkgray;
+}
+
+.files {
+  background-color:#343434;
+}
+
+.number {
+  color: black;
 }
